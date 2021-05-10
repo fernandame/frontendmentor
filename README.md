@@ -1,11 +1,11 @@
 # Frontend Mentor
 
-This is a repository to reunite my Front-end coding challenges from Frontend Mentor.
+This is a repository to reunite my Front-end coding challenges from [Frontend Mentor](https://www.frontendmentor.io/).
 
 ## Table of contents
 
 - [Card](card/)
-  - [Built with](#built-with)
+- [Built with](#built-with)
 
 ### Built with
 

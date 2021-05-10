@@ -1,5 +1,7 @@
 <template>
-  <Card />
+  <div class="flex justify-center items-center h-screen">
+    <Card />
+  </div>
 </template>
 
 <script>
@@ -20,18 +22,16 @@ export default {
 
 html {
   height: 100%;
+  font-size: 15px;
 }
 
 body {
   height: 100%;
-  background-color: #0a0c1b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: hsl(233, 47%, 7%);
 }
 
 #app {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

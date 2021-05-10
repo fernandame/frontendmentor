@@ -1,41 +1,55 @@
 <template>
-  <figure
-    class="bg-[#1c1938] w-[57.625rem] h-[23.25rem] rounded-md grid grid-cols-2 2xl:w-[69.35rem] 2xl:h-[27.85rem]"
+  <div
+    class="bg-[hsl(244,38%,16%)] max-w-[22rem] max-h-[52rem] m-4 xl:m-0 font-inter rounded-xl grid grid-cols-1 xl:grid-cols-2 xl:max-w-[75rem] xl:max-h-[30rem] overflow-hidden xl:tracking-wide"
   >
     <div
-      class="text-gray-100 p-[3.75rem] text-left overflow-hidden 2xl:p-[4.5rem]"
+      class="text-[hsl(0,0%,100%)] p-8 text-center xl:text-left xl:p-[4.75rem] order-2 xl:order-1"
     >
-      <h1 class="text-3xl font-bold mb-[1.25rem] 2xl:text-4xl 2xl:mb-[1.75rem]">
-        Get <span class="text-[#aa5adc]">insights</span> that help your business
-        grow.
+      <h1
+        class="text-3xl font-bold mb-5 xl:text-4xl xl:mb-7 xl:leading-[3rem] xl:tracking-[0.075rem]"
+      >
+        Get <span class="text-[hsl(277,64%,61%)]">insights</span> that help your
+        business grow.
       </h1>
       <p
-        class="text-gray-400 text-[0.85rem] sm:max-w-xs mb-14 2xl:text-[1rem] 2xl:mb-[4.75rem] 2xl:max-w-sm overflow-hidden"
+        class="text-[hsla(0,0%,100%,0.75)] leading-7 xl:leading-[1.75rem] max-w-sm xl:font-thin overflow-hidden"
       >
         Discover the benefits of data analytics and make better decisions
         regarding revenue, customer experience, and overall efficiency.
       </p>
-      <div>
-        <ul class="data flex">
-          <li class="flex-1" v-for="(value, key) in items" :key="key">
-            <p class="text-[1.25rem] font-bold 2xl:text-2xl">
+      <div id="data">
+        <ul
+          class="font-lexend flex flex-col xl:flex-row tracking-wide mt-4 xl:mt-20"
+        >
+          <li
+            class="flex-1 mt-7 xl:mt-0"
+            v-for="(value, key) in items"
+            :key="key"
+          >
+            <p class="text-2xl font-bold mb-1">
               {{ value }}
             </p>
-            <p class="text-[0.7rem] text-gray-400 uppercase 2xl:text-sm">
+            <p class="text-sm text-[hsla(0,0%,100%,0.6)] uppercase">
               {{ key }}
             </p>
           </li>
         </ul>
       </div>
     </div>
-    <div class="filter flex justify-end relative">
-      <img
-        class="w-full rounded-r-md object-cover filter grayscale contrast-75 brightness-110"
-        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
-        alt=""
-      />
+    <div class="div-filter flex relative order-1 xl:order-2">
+      <picture class="w-full">
+        <source
+          media="(min-width:1440px)"
+          srcset="../assets/image-header-desktop.jpg"
+        />
+        <img
+          class="w-full h-full object-cover filter contrast-50 brightness-110"
+          src="../assets/image-header-mobile.jpg"
+          alt=""
+        />
+      </picture>
     </div>
-  </figure>
+  </div>
 </template>
 
 <script>
@@ -54,15 +68,18 @@ export default {
 </script>
 
 <style>
-.filter:after {
+.div-filter:after {
   position: absolute;
   content: "";
-  display: block;
-  top: 0;
-  right: 0;
   height: 100%;
   width: 100%;
-  background: #aa5adc;
+  background: hsl(277, 70%, 61%);
   mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 300px) {
+  #data {
+    display: none;
+  }
 }
 </style>

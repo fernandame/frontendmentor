@@ -30,7 +30,7 @@
     </div>
     <div class="filter flex justify-end relative">
       <img
-        class="w-[97%] rounded-r-md object-cover filter grayscale contrast-75 brightness-110"
+        class="w-full rounded-r-md object-cover filter grayscale contrast-75 brightness-110"
         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80"
         alt=""
       />
@@ -61,7 +61,7 @@ export default {
   top: 0;
   right: 0;
   height: 100%;
-  width: 97%;
+  width: 100%;
   background: #aa5adc;
   mix-blend-mode: multiply;
 }

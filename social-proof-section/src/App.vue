@@ -1,20 +1,23 @@
 <template>
-  <div id="app" class="p-4 lg:px-36 lg:py-32 text-[15px] desktop:h-full">
+  <div
+    id="app"
+    class="p-4 lg:px-36 lg:py-32 text-[15px] desktop:h-full 2xl:p-52"
+  >
     <div
-      class="text-base text-center m-3 lg:mt-6 lg:flex lg:flex-col lg:text-left 2xl:text-base"
+      class="text-base text-center m-3 lg:mt-6 lg:flex lg:flex-col lg:text-left 2xl:m-0 2xl:items-center"
     >
       <div class="desktop:flex desktop:flex-row">
         <section>
           <div
-            class="flex flex-col justify-center items-center desktop:items-start"
+            class="flex flex-col justify-center items-center desktop:items-start 2xl:transform 2xl:-translate-x-44"
           >
             <h1
-              class="text-primary-magenta text-4xl font-bold leading-9 mt-16 lg:m-0 lg:text-5xl lg:tracking-tight lg:max-w-md desktop:max-w-lg"
+              class="text-primary-magenta text-4xl font-bold leading-9 mt-16 lg:m-0 lg:text-5xl lg:tracking-tight lg:max-w-md desktop:max-w-lg 2xl:text-7xl"
             >
               10,000+ of our users love our products.
             </h1>
             <p
-              class="text-neutral-dark-magenta mt-6 font-medium lg:mt-3 lg:max-w-md lg:tracking-tighter"
+              class="text-neutral-dark-magenta mt-6 font-medium lg:mt-3 lg:max-w-md lg:tracking-tighter 2xl:mt-6 2xl:text-xl 2xl:max-w-xl "
             >
               We only provide great products combined with excellent customer
               service. See what our satisfied customers are saying about our
@@ -24,7 +27,7 @@
         </section>
         <section class="mt-5 transform lg:m-0 desktop:translate-x-16">
           <ul
-            class="flex flex-col items-center space-y-5 transform lg:mt-12 desktop:m-0"
+            class="flex flex-col items-center space-y-5 transform lg:mt-12 desktop:m-0 2xl:space-y-10"
           >
             <Rating stars="5" place="Reviews" />
             <Rating
@@ -40,7 +43,7 @@
           </ul>
         </section>
       </div>
-      <section class="mt-10 lg:mt-14">
+      <section class="mt-10 lg:mt-14 2xl:max-w-screen-2xl">
         <div class="lg:flex space-y-4 lg:space-y-0 lg:space-x-8">
           <Review
             imageUrl="@/assets/images/image-colton.jpg"

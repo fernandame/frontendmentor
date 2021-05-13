@@ -4,7 +4,7 @@
   >
     <div class="container flex flex-col justify-center">
       <div
-        class="flex flex-col xs:flex-row mt-4 items-center justify-center xs:justify-start"
+        class="flex flex-col xs:flex-row mt-2 items-center justify-center xs:justify-start"
       >
         <img
           class="rounded-full object-cover h-14 w-14 xs:w-10 xs:h-10 large:min-h-[4rem] large:min-w-[4rem]"

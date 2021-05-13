@@ -25,7 +25,9 @@
             </p>
           </div>
         </section>
-        <section class="mt-5 transform desktop:translate-x-16">
+        <section
+          class="mt-5 transform desktop:translate-x-16 xg:translate-x-36"
+        >
           <ul
             class="flex flex-col items-center space-y-5 transform lg:mt-4 desktop:m-0 large:space-y-8"
           >

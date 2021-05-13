@@ -10,6 +10,10 @@ module.exports = {
         "neutral-dark-magenta": "hsl(303,10%,53%)",
         "neutral-light-magenta": "hsl(300, 24%, 96%)",
       },
+      screens: {
+        xs: "340px",
+        desktop: "1440px",
+      },
     },
   },
   variants: {

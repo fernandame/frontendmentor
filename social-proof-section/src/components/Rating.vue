@@ -1,17 +1,17 @@
 <template>
   <div
-    class="bg-neutral-light-magenta rounded-lg p-2 w-full lg:max-w-[32rem] lg:p-5 m-4"
+    class="bg-neutral-light-magenta rounded-lg p-2 w-full flex items-center justify-center lg:justify-start lg:px-8 lg:py-4 lg:max-w-md desktop:max-w-prose"
   >
-    <div
-      class="w-full h-full flex flex-col items-center justify-center lg:flex-row lg:justify-start"
-    >
-      <ul class="flex space-x-2 mt-1 lg:ml-4 lg:mr-12">
+    <div class="flex flex-col items-center justify-center lg:flex-row">
+      <ul class="flex space-x-2 mt-1">
         <li v-for="i in Number(stars)" :key="i">
           <img src="../assets/images/icon-star.svg" />
         </li>
       </ul>
-      <p class="text-primary-magenta font-bold mt-4 lg:mt-0">
-        Rated {{ stars }} stars in {{ place }}
+      <p
+        class="text-primary-magenta tracking-tight font-bold mt-4 lg:mt-0 lg:ml-8"
+      >
+        Rated {{ stars }} Stars in {{ place }}
       </p>
     </div>
   </div>

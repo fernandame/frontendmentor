@@ -1,5 +1,7 @@
 <template>
-  <header class="flex justify-between items-center font-bold text-gray-400">
+  <header
+    class="absolute inset-x-0 flex justify-between items-center px-6 lg:px-32 xl:px-40 pt-12 font-bold text-gray-400 z-10"
+  >
     <div class="flex items-center justify-between">
       <a href="/">
         <logo />
@@ -13,7 +15,7 @@
     <div class="hidden lg:flex items-center gap-x-9">
       <a href="#!" class="hover:text-black">Login</a>
       <button
-        class="rounded-full bg-primary-blue hover:bg-active-blue py-2 px-6"
+        class="rounded-full bg-primary-blue hover:bg-active-blue focus:outline-none py-2 px-6"
       >
         <a href="#!" class="text-white">Sign Up</a>
       </button>

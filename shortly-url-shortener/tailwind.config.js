@@ -11,8 +11,15 @@ module.exports = {
         "background-gray": "#EFF1F7",
         "primary-blue": "#2BD0D0",
         "active-blue": "#9AE3E3",
+        "primary-purple": "#3A3054",
       },
       fontSize: {
+        s: [
+          "15px",
+          {
+            lineHeight: "26px",
+          },
+        ],
         "7xl": [
           "4.5rem",
           {

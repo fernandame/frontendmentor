@@ -8,10 +8,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        "background-gray": "#EFF1F7",
+        "dark-violet": "#34313D",
+        "primary-violet": "#3A3054",
+        "lighter-violet": "#4B3F6B",
+        "dark-gray": "#9E9AA8",
+        "lighter-gray": "#EFF1F7",
         "primary-blue": "#2BD0D0",
-        "active-blue": "#9AE3E3",
-        "primary-purple": "#3A3054",
+        "lighter-blue": "#9AE3E3",
+        "orange-red": "#F46363",
       },
       fontSize: {
         s: [

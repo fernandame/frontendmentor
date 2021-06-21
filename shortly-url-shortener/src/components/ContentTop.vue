@@ -8,6 +8,7 @@
       >
         <img
           src="@/assets/images/IllustrationWorking.svg"
+          alt="Illustration of a person working on their computer"
           class="w-[512px] sm:w-[600px] lg:w-full max-w-none absolute lg:relative top-0 left-0 sm:left-1/2 lg:left-0 transform sm:-translate-x-1/2 lg:translate-x-0"
         />
       </div>
@@ -23,11 +24,12 @@
           Build your brand’s recognition and get detailed insights on how your
           links are performing.
         </h2>
-        <button
-          class="text-white font-bold text-lg rounded-full bg-primary-blue xl:text-xl hover:bg-active-blue focus:outline-none px-10 py-3 mt-8 lg:mt-10"
+        <a
+          class="text-white font-bold text-lg rounded-full bg-primary-blue xl:text-xl hover:bg-lighter-blue px-10 py-3 mt-8 lg:mt-10"
+          href="#form"
+          @click="removeHash"
+          >Get Started</a
         >
-          <a href="#!">Get Started</a>
-        </button>
       </div>
     </div>
   </div>
@@ -36,5 +38,12 @@
 <script>
 export default {
   name: "ContentTop",
+  methods: {
+    removeHash: function() {
+      setTimeout(function() {
+        history.replaceState("", document.title, window.location.pathname);
+      }, 1);
+    },
+  },
 };
 </script>

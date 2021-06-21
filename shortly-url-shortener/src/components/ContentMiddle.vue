@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-col items-center pt-44 pb-20 lg:pt-52 lg:pb-32 px-6 lg:px-32 xl:px-40"
-  >
+  <div class="flex flex-col items-center py-40 lg:py-48 px-6 lg:px-32 xl:px-40">
     <div class="flex flex-col text-center items-center">
       <p class="text-3xl lg:text-5xl font-bold">
         Advanced Statistics

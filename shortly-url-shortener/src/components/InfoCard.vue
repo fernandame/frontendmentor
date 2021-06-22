@@ -2,14 +2,14 @@
   <div
     class="bg-white flex flex-col text-center lg:text-left items-center lg:items-start max-w-sm rounded-md mt-24 p-8 pt-20 relative z-10"
   >
-    <div class="absolute -top-12 p-6 rounded-full bg-primary-violet">
+    <div class="absolute -top-12 p-6 rounded-full bg-violet-default">
       <img
-        :src="require(`../assets/icons/${imgName}.svg`)"
+        :src="require(`@/assets/icons/${imgName}.svg`)"
         class="select-none"
       />
     </div>
     <h3 class="font-bold text-xl xl:text-2xl">{{ text }}</h3>
-    <p class="text-s pt-3 text-gray-400">
+    <p class="text-s pt-3 text-gray-dark">
       {{ description }}
     </p>
   </div>

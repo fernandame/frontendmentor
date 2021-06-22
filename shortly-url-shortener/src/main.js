@@ -1,6 +1,6 @@
 import Vue from "vue";
-import App from "./App.vue";
-import "./assets/styles/index.css";
+import App from "@/App.vue";
+import "@/assets/styles/index.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars } from "@fortawesome/pro-regular-svg-icons";

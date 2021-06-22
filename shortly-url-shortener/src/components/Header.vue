@@ -4,7 +4,7 @@
   >
     <div class="flex items-center justify-between">
       <a href="/">
-        <logo />
+        <logo class="text-violet-dark" />
       </a>
       <div class="hidden lg:flex lg:ml-8 lg:gap-x-8">
         <a href="#!" class="hover:text-black focus:text-black">Features</a>
@@ -15,7 +15,7 @@
     <div class="hidden lg:flex items-center gap-x-9">
       <a href="#!" class="hover:text-black">Login</a>
       <a
-        class="text-white rounded-full bg-primary-blue hover:bg-lighter-blue py-2 px-6"
+        class="text-white rounded-full bg-blue-default hover:bg-blue-light py-2 px-6"
         href="#!"
         >Sign Up</a
       >
@@ -31,7 +31,8 @@
 </template>
 
 <script>
-import Logo from "../assets/icons/Logo.vue";
+import Logo from "@/assets/icons/Logo.vue";
+
 export default {
   components: { Logo },
   name: "Header",

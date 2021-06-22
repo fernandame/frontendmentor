@@ -8,13 +8,21 @@ module.exports = {
     },
     extend: {
       colors: {
-        "dark-violet": "#34313D",
-        "primary-violet": "#3A3054",
-        "lighter-violet": "#4B3F6B",
-        "dark-gray": "#9E9AA8",
-        "lighter-gray": "#EFF1F7",
-        "primary-blue": "#2BD0D0",
-        "lighter-blue": "#9AE3E3",
+        violet: {
+          default: "#3A3054",
+          dark: "#34313D",
+          light: "#4B3F6B",
+          footer: "#232127",
+        },
+        blue: {
+          default: "#2BD0D0",
+          light: "#9AE3E3",
+        },
+        gray: {
+          light: "#EFF1F7",
+          dark: "#9E9AA8",
+          footer: "#BFBFBF",
+        },
         "orange-red": "#F46363",
       },
       fontSize: {

@@ -20,7 +20,7 @@
           description="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
         />
         <span
-          class="absolute left-[49%] lg:left-full h-full lg:h-2 w-2 lg:w-full lg:top-2/3 bg-primary-blue"
+          class="absolute left-[49%] lg:left-full h-full lg:h-2 w-2 lg:w-full lg:top-2/3 bg-blue-default"
         ></span>
       </div>
       <div class="relative">
@@ -31,7 +31,7 @@
           description="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
         />
         <span
-          class="absolute left-[49%] lg:left-full h-full lg:h-2 w-2 lg:w-full lg:top-2/3 bg-primary-blue"
+          class="absolute left-[49%] lg:left-full h-full lg:h-2 w-2 lg:w-full lg:top-2/3 bg-blue-default"
         ></span>
       </div>
       <div>
@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import InfoCard from "./InfoCard.vue";
+import InfoCard from "@/components/InfoCard.vue";
 
 export default {
   name: "ContentMiddle",

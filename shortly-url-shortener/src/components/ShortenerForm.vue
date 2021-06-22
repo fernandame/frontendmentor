@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center bg-primary-violet rounded-xl mx-auto h-40 relative -mt-20 w-10/12 max-w-xl lg:max-w-3xl xl:max-w-5xl"
+    class="flex items-center justify-center bg-violet-default rounded-xl mx-auto h-40 relative -mt-20 w-10/12 max-w-xl lg:max-w-3xl xl:max-w-5xl"
     id="form"
     @keydown.tab="handleTab()"
   >
@@ -36,7 +36,7 @@ export default {
         input:
           "w-full rounded-md lg:rounded-lg lg:w-3/4 xl:w-10/12 py-3 md:py-4 px-4 focus:outline-none",
         button:
-          "bg-primary-blue hover:bg-lighter-blue text-white font-bold w-full lg:w-1/4 xl:w-3/12 py-3 md:py-4 rounded-md lg:rounded-lg",
+          "bg-blue-default hover:bg-blue-light text-white font-bold w-full lg:w-1/4 xl:w-3/12 py-3 md:py-4 rounded-md lg:rounded-lg",
       },
       userIsTabbing: false,
       tabKeyActive: false,

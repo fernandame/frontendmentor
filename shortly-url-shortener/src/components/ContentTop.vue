@@ -24,26 +24,19 @@
           Build your brand’s recognition and get detailed insights on how your
           links are performing.
         </h2>
-        <a
-          class="text-white font-bold text-lg rounded-full bg-primary-blue xl:text-xl hover:bg-lighter-blue px-10 py-3 mt-8 lg:mt-10"
-          href="#form"
-          @click="removeHash"
-          >Get Started</a
-        >
+        <div class="mt-8 lg:mt-10">
+          <GetStartedButton />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import GetStartedButton from "@/components/GetStartedButton.vue";
+
 export default {
   name: "ContentTop",
-  methods: {
-    removeHash: function() {
-      setTimeout(function() {
-        history.replaceState("", document.title, window.location.pathname);
-      }, 1);
-    },
-  },
+  components: { GetStartedButton },
 };
 </script>

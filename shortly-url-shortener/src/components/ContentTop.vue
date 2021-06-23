@@ -24,7 +24,7 @@
           Build your brand’s recognition and get detailed insights on how your
           links are performing.
         </h2>
-        <div class="mt-8 lg:mt-10">
+        <div class="my-8 lg:my-10 xl:my-12">
           <GetStartedButton />
         </div>
       </div>
